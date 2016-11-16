@@ -2955,7 +2955,7 @@ img {
 
 @media screen and (min-width: 1024px) {
   .gallery_01 {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
 }
 
@@ -4318,6 +4318,7 @@ _:-ms-input-placeholder, :root .layout_06 .layoutWrap .title {
 }
 
 .gallery_01 .gallery_01_slider .showMore {
+  display: none;
   background-color: #000;
   color: #fff;
   bottom: 60px;
@@ -4337,6 +4338,22 @@ _:-ms-input-placeholder, :root .layout_06 .layoutWrap .title {
   .gallery_01 .gallery_01_slider .jssort01 {
     bottom: 0px;
   }
+}
+
+.gallery_01 .gallery_01_slider .jssora05l:hover svg.arrowL polyline, .gallery_01 .gallery_01_slider .jssora05l.jssora05ldn svg.arrowL polyline {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.gallery_01 .gallery_01_slider .jssora05l svg.arrowL polyline {
+  stroke: white;
+}
+
+.gallery_01 .gallery_01_slider .jssora05r:hover svg.arrowR polyline, .gallery_01 .gallery_01_slider .jssora05r.jssora05rdn svg.arrowR polyline {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.gallery_01 .gallery_01_slider .jssora05r svg.arrowR polyline {
+  stroke: white;
 }
 
 _:-ms-input-placeholder, :root .gallery_01 .layoutWrap .title {

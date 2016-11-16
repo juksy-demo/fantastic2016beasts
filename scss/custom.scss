@@ -353,6 +353,7 @@ _:-ms-input-placeholder, :root .layout_06 .layoutWrap .title {
             }
         } 
         .showMore {
+            display: none;
             background-color: $black;
             color: $white;
             bottom: 60px;//if .txt none
@@ -364,6 +365,34 @@ _:-ms-input-placeholder, :root .layout_06 .layoutWrap .title {
             bottom: 60px;//if .txt none
             @include screen(pcSmall) {
                 bottom: 0px;//if .txt none
+            }
+        }
+        .jssora05l {
+            &:hover, &.jssora05ldn {
+                svg.arrowL {
+                    polyline {
+                        stroke: rgba(255,255,255,0.5);
+                    }
+                }
+            }
+            svg.arrowL {
+                polyline {
+                    stroke: rgba(255,255,255,1);
+                }
+            }
+        }
+        .jssora05r {
+            &:hover, &.jssora05rdn {
+                svg.arrowR {
+                    polyline {
+                        stroke: rgba(255,255,255,0.5);
+                    }
+                }
+            }
+            svg.arrowR {
+                polyline {
+                    stroke: rgba(255,255,255,1);
+                }
             }
         }
     }

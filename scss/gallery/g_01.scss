@@ -4,7 +4,7 @@
     padding-top: 30px;
     padding-bottom: 20px;
     @include screen(pcSmall) {
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
     .layoutWrap {
         @include screen(pcSmall) {
@@ -176,7 +176,7 @@
             &:hover, &.jssora05ldn {
                 svg.arrowL {
                     polyline {
-                        stroke: rgba(0,0,0,0.8);
+                        stroke: rgba(0, 0, 0, 0.8);
                     }
                 }
             }
@@ -188,7 +188,7 @@
                 height: 60px;
                 polyline {
                     fill: none;
-                    stroke: rgba(0,0,0,0.3);
+                    stroke: rgba(0, 0, 0, 0.3);
                     stroke-width: 2px;
                 }
             }
@@ -212,7 +212,7 @@
             &:hover, &.jssora05rdn {
                 svg.arrowR {
                     polyline {
-                        stroke: rgba(0,0,0,0.8);
+                        stroke: rgba(0, 0, 0, 0.8);
                     }
                 }
             }
@@ -224,7 +224,7 @@
                 height: 60px;
                 polyline {
                     fill: none;
-                    stroke: rgba(0,0,0,0.3);
+                    stroke: rgba(0, 0, 0, 0.3);
                     stroke-width: 2px;
                 }
             }
