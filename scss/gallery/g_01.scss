@@ -97,7 +97,7 @@
                         opacity: 0.5;
                         @include transition;
                         &.bigger {
-                            @include transform(scale(1));
+                            @include transform(none);
                             @include transform-origin(50% 50%);
                             opacity: 1;
                         }
