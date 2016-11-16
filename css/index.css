@@ -3968,136 +3968,56 @@ _:-ms-input-placeholder, :root .fixedBtnCover_01 .coverWrap .main .mainWrap .ite
   display: none;
 }
 
+body {
+  background-color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav_01 .navWrap {
+    background-color: #0a143c;
+  }
+}
+
+.nav_01 .navWrap .logoWrap {
+  background-color: #0a143c;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav_01 .navWrap .logoWrap {
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav_01 .navWrap .menuWrap ul.menu li ul {
+    background-color: #6095ff;
+  }
+  .nav_01 .navWrap .menuWrap ul.menu li:hover ul li {
+    background-color: #6095ff;
+  }
+}
+
+.header_02 .headerWrap .parallax .videoWrapper .videoCover {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .header_02 .headerWrap .parallaxContent .title {
-    background-position: center 60%;
+    background-image: url("../img/htitle.png");
+    background-position: center 85%;
   }
 }
 
 .header_02 .headerWrap .detail .detailWrap .txtBg {
-  background-color: black;
+  background-color: #0a143c;
 }
 
 .header_02 .headerWrap .detail .detailWrap .txtInner a.link {
-  background-color: #bc002d;
+  background-color: #6095ff;
 }
 
 .header_02 .headerWrap .detail .detailWrap .txtInner a.link:hover {
-  background-color: rgba(188, 0, 45, 0.9);
-}
-
-.header_03 .headerWrap .visualBg .bannerTitle {
-  display: none;
-}
-
-.header_03 .headerWrap .visualBg .bannerCover {
-  display: none;
-}
-
-.header_03 .headerWrap .detail .detailWrap .txtBg {
-  background-color: #00222d;
-}
-
-.header_03 .headerWrap .detail .detailWrap .txtInner .txtWrap {
-  color: white;
-}
-
-.header_03 .headerWrap .detail .detailWrap .txtInner a.link {
-  background-color: #07d000;
-}
-
-.header_03 .headerWrap .detail .detailWrap .txtInner a.link:hover {
-  background-color: rgba(7, 208, 0, 0.9);
-}
-
-.header_04 .headerWrap .detail .detailWrap .txtBg {
-  background-color: #00222d;
-}
-
-.header_04 .headerWrap .detail .detailWrap .txtInner .txtWrap {
-  color: white;
-}
-
-.layout_01 .layoutWrap .mainArticle a.img .linkWrap {
-  background-color: rgba(188, 0, 45, 0.9);
-}
-
-.layout_01 .layoutWrap .mainArticle .detailWrap a.button:hover {
-  background-color: #bc002d;
-  color: #fff;
-}
-
-.layout_01 .layoutWrap .mainArticle .detailWrap a.button:hover .arrow {
-  border-color: transparent transparent transparent #bc002d;
-}
-
-.layout_01 .layoutWrap .subArticle .popularity {
-  display: none;
-  visibility: hidden;
-}
-
-@media screen and (min-width: 1024px) {
-  .layout_01 .layoutWrap .subArticle .popularity {
-    display: block;
-  }
-}
-
-.layout_01 .layoutWrap .subArticle a.img .linkWrap {
-  background-color: rgba(188, 0, 45, 0.9);
-}
-
-.layout_01 .layoutWrap .exArticle ul.exArticleWrap li a.img .linkWrap {
-  background-color: rgba(188, 0, 45, 0.9);
-}
-
-.layout_02 {
-  background-color: #fff;
-}
-
-.layout_02 .layoutWrap .title {
-  color: #333333;
-}
-
-.layout_02 .layoutWrap .subTitle {
-  color: #666767;
-}
-
-.layout_02 .layoutWrap ul.articleWrap li {
-  border-top: 1px solid #005887;
-}
-
-.layout_02 .layoutWrap ul.articleWrap li .article {
-  background-color: #005887;
-}
-
-.layout_02 .layoutWrap ul.articleWrap li .article a.img .linkWrap {
-  background-color: rgba(122, 161, 194, 0.8);
-}
-
-.layout_02 .layoutWrap ul.articleWrap li .article a.img:after {
-  border-color: #005887 transparent transparent transparent;
-}
-
-.layout_02 .layoutWrap ul.articleWrap li .article a.txt h3 {
-  color: #fff;
-}
-
-@media screen and (min-width: 1280px) {
-  .layout_02 .layoutWrap ul.articleWrap li .article a.txt h3 {
-    background-image: transparent;
-    background-image: -webkit-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: -o-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: -moz-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: linear-gradient(to right, transparent 50%, #000 50%);
-  }
-}
-
-.layout_02 .layoutWrap ul.articleWrap li.big .article a.img .linkWrap {
-  background-color: rgba(122, 161, 194, 0.8);
-}
-
-.layout_02 .layoutWrap ul.articleWrap li.big:after {
-  border-color: transparent transparent #005887 transparent;
+  background-color: rgba(96, 149, 255, 0.9);
 }
 
 @media screen and (min-width: 1280px) {
@@ -4168,31 +4088,52 @@ _:-ms-input-placeholder, :root .fixedBtnCover_01 .coverWrap .main .mainWrap .ite
   }
 }
 
+.layout_04 {
+  background-color: #000;
+}
+
+.layout_04 .layoutWrap .title {
+  color: #f1b046;
+  color: transparent;
+  background-image: #fff1bf;
+  background-image: -webkit-linear-gradient(top, #fff1bf 55%, #ffcc00 66%, #d89400 68%, #a85c00 70%);
+  background-image: -o-linear-gradient(top, #fff1bf 55%, #ffcc00 66%, #d89400 68%, #a85c00 70%);
+  background-image: -moz-linear-gradient(top, #fff1bf 55%, #ffcc00 66%, #d89400 68%, #a85c00 70%);
+  background-image: linear-gradient(to bottom, #fff1bf 55%, #ffcc00 66%, #d89400 68%, #a85c00 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.layout_04 .layoutWrap .title:after {
+  margin-top: 5px;
+  height: 5px;
+  background-color: #f1b046;
+  background-image: #fff1bf;
+  background-image: -webkit-linear-gradient(left, #fff1bf 0%, #d89400 60%, #a85c00 100%);
+  background-image: -o-linear-gradient(left, #fff1bf 0%, #d89400 60%, #a85c00 100%);
+  background-image: -moz-linear-gradient(left, #fff1bf 0%, #d89400 60%, #a85c00 100%);
+  background-image: linear-gradient(to right, #fff1bf 0%, #d89400 60%, #a85c00 100%);
+}
+
+.layout_04 .layoutWrap .detail {
+  color: #fff;
+}
+
 .layout_04 .layoutWrap .sliderWrap .slidesWrap ul.slides li a.img .linkWrap {
-  background-color: rgba(235, 90, 36, 0.9);
+  background-color: rgba(10, 20, 60, 0.5);
+}
+
+.layout_04 .layoutWrap .sliderWrap .slidesWrap ul.slides li .txtWrap a.txt h3 {
+  color: #fff;
 }
 
 @media screen and (min-width: 1280px) {
   .layout_04 .layoutWrap .sliderWrap .slidesWrap ul.slides li .txtWrap a.txt h3 {
     background-image: transparent;
-    background-image: -webkit-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: -o-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: -moz-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: linear-gradient(to right, transparent 50%, #000 50%);
-  }
-}
-
-.layout_05 .layoutWrap ul.article li a.img .linkWrap {
-  background-color: rgba(235, 90, 36, 0.9);
-}
-
-@media screen and (min-width: 1280px) {
-  .layout_05 .layoutWrap ul.article li .txtWrap a.txt h3 {
-    background-image: transparent;
-    background-image: -webkit-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: -o-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: -moz-linear-gradient(left, transparent 50%, #000 50%);
-    background-image: linear-gradient(to right, transparent 50%, #000 50%);
+    background-image: -webkit-linear-gradient(left, transparent 50%, #6095ff 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, #6095ff 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, #6095ff 50%);
+    background-image: linear-gradient(to right, transparent 50%, #6095ff 50%);
   }
 }
 
@@ -4215,21 +4156,5 @@ _:-ms-input-placeholder, :root .fixedBtnCover_01 .coverWrap .main .mainWrap .ite
 }
 
 .article_01 .articleWrap .txtWrap .btnWrap a.btn {
-  background-color: #f29ead;
-}
-
-.article_02 .articleWrap ul.article li:nth-child(odd) {
-  background-color: #dbe2e6;
-}
-
-.article_02 .articleWrap ul.article li:nth-child(odd) a.btn {
-  background-color: #f29ead;
-}
-
-.article_02 .articleWrap ul.article li:nth-child(even) {
-  background-color: #dbe2e6;
-}
-
-.article_02 .articleWrap ul.article li:nth-child(even) a.btn {
   background-color: #f29ead;
 }

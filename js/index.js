@@ -734,16 +734,16 @@
 function onYouTubeIframeAPIReady() {
     var player;
     player = new YT.Player('header_02_player', {
-        videoId: '2sj2iQyBTQs', // YouTube 影片ID
+        videoId: 'Vso5o11LuGU', // YouTube 影片ID
         width: 560, // 播放器寬度 (px)
         height: 315, // 播放器高度 (px)
         playerVars: {
             rel: 0, // 播放結束後推薦其他影片
             controls: 0, // 在播放器顯示暫停／播放按鈕
-            start: 38, //指定起始播放秒數
+            start: 94, //指定起始播放秒數
             autoplay: 1, // 在讀取時自動播放影片
             loop: 1, // 讓影片循環播放
-            playlist: '2sj2iQyBTQs',
+            playlist: 'Vso5o11LuGU',
             showinfo: 0, // 隱藏影片標題
             modestbranding: 1, // 隱藏YouTube Logo
             fs: 0, // 隱藏全螢幕按鈕
