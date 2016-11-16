@@ -4093,7 +4093,6 @@ body {
 }
 
 .layout_04 .layoutWrap .title {
-  color: #f1b046;
   color: transparent;
   background-image: #fff1bf;
   background-image: -webkit-linear-gradient(top, #fff1bf 55%, #ffcc00 66%, #d89400 68%, #a85c00 70%);
@@ -4135,6 +4134,11 @@ body {
     background-image: -moz-linear-gradient(left, transparent 50%, #6095ff 50%);
     background-image: linear-gradient(to right, transparent 50%, #6095ff 50%);
   }
+}
+
+_:-ms-input-placeholder, :root .layout_04 .layoutWrap .title {
+  color: #f1b046;
+  background-image: none;
 }
 
 .layout_06 .layoutWrap ul.article li a.img .linkWrap {

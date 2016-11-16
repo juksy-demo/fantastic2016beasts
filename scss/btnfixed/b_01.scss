@@ -332,7 +332,7 @@ _:-moz-tree-row(hover), .fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.sh
     display: none;
 }
 
-// checkbox can't be transparent, fixed for IE/edge<=10
+// checkbox can't be transparent, fixed for IE/edge>=10
 _:-ms-input-placeholder, :root .fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share li .material_btn input.toggle[type="checkbox"], ul.fixedBtn_01 li .material_btn input.toggle[type="checkbox"] {
     display: none;
 }

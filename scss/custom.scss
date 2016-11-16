@@ -178,7 +178,6 @@ body{
     background-color: $black;
     .layoutWrap {
         .title {
-            color: rgba(241,176,70,1);//IE
             color:transparent;
             @include linear-gradient(to bottom, rgba(255,241,191,1) 55%, rgba(255,204,0,1) 66%, rgba(216,148,0,1) 68%, rgba(168,92,0,1) 70%);
             -webkit-background-clip: text;
@@ -219,6 +218,11 @@ body{
             }
         }
     }
+}
+//fixed for IE/edge>=10
+_:-ms-input-placeholder, :root .layout_04 .layoutWrap .title {
+    color: rgba(241,176,70,1);
+    background-image: none;
 }
 
 .layout_06 {
