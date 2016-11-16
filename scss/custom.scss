@@ -1,0 +1,486 @@
+.nav_01 {
+    .navWrap {
+        @include screen(pcSmall) {
+            //桌機-導覽列顏色
+            //background-color: rgba(0, 0, 0, 0.9);
+        }
+        .logoWrap {
+            //手機-導覽列顏色
+            //background-color: rgba(0, 0, 0, 0.9);
+            @include screen(pcSmall) {
+                //background-color: transparent;
+            }
+        }
+        .menuWrap {
+            ul.menu {
+                li {
+                    @include screen(pcSmall) {
+                        ul {
+                            //background-color: rgba(188, 0, 45, 1);
+                        }
+                        &:hover ul {
+                            li {
+                                //background-color: rgba(188, 0, 45, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header_01 {
+    .headerWrap {
+        .visualBg {
+            //手機－主視覺圖片
+            //background-image: url('../img/visual_m.jpg');
+            //主視覺圖片垂直靠上或垂直置中對齊
+            //background-position: center top;
+            @include screen(tb) {
+                //平板－主視覺圖片
+                //background-image: url('../img/visual_tb.jpg');
+            }
+            @include screen(pcSmall) {
+                //桌機－主視覺圖片
+                //background-image: url('../img/visual_pc.jpg');
+            }
+        }
+        .detail {
+            .detailWrap {
+                .txtBg {
+                    //background-color: rgba(0, 0, 0, 1);
+                }
+                .txtInner {
+                    .txtWrap {
+                        //color: rgba(255, 255, 255, 1);
+                    }
+                    a.link {
+                        //background-color: rgba(188, 0, 45, 1);
+                        &:hover {
+                            //background-color: rgba(188, 0, 45, 0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header_02 {
+    .headerWrap {
+        .visualBg {
+            //background-image: url('../img/visual_m.jpg');
+            //background-position: center;
+            @include screen(tb) {
+                //background-image: url('../img/visual_tb.jpg');
+                //background-position: center;
+            }
+        }
+        .parallaxContent {
+            @include screen(pcSmall) {
+                .title {
+                    //background-image: url('../img/htitle.png');
+                    background-position: center 60%;
+                }
+            }
+        }
+        .detail {
+            .detailWrap {
+                .txtBg {
+                    background-color: rgba(0, 0, 0, 1);
+                }
+                .txtInner {
+                    .txtWrap {
+                        //color: rgba(255, 255, 255, 1);
+                    }
+                    a.link {
+                        background-color: rgba(188, 0, 45, 1);
+                        &:hover {
+                            background-color: rgba(188, 0, 45, 0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header_03 {
+    .headerWrap {
+        .visualBg {
+            .banner {
+                .bullet {
+                    //display: none;
+                }
+            }
+            .bannerTitle {
+                display: none;
+            }
+            .bannerCover {
+                display: none;
+            }
+        }
+        .detail {
+            .detailWrap {
+                .txtBg {
+                    background-color: rgba(0, 34, 45, 1);
+                }
+                .txtInner {
+                    .txtWrap {
+                        color: rgba(255, 255, 255, 1);
+                    }
+                    a.link {
+                        background-color: rgba(7, 208, 0, 1);
+                        &:hover {
+                            background-color: rgba(7, 208, 0, 0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header_04 {
+    .headerWrap {
+        .detail {
+            .detailWrap {
+                .txtBg {
+                    background-color: rgba(0, 34, 45, 1);
+                }
+                .txtInner {
+                    .txtWrap {
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_01 {
+    .layoutWrap {
+        .mainArticle {
+            a.img {
+                .linkWrap {
+                    background-color: rgba(188, 0, 45, 0.9);
+                }
+            }
+            .detailWrap {
+                a.button {
+                    &:hover {
+                        background-color: #bc002d;
+                        color: $white;
+                        .arrow {
+                            border-color: transparent transparent transparent #bc002d;
+                        }
+                    }
+                }
+            }
+        }
+        .subArticle {
+            .popularity {
+                display: none;
+                visibility: hidden;
+                @include screen(pcSmall) {
+                    display: block;
+                }
+            }
+            a.img {
+                .linkWrap {
+                    background-color: rgba(188, 0, 45, 0.9);
+                }
+            }
+        }
+        .exArticle {
+            ul.exArticleWrap {
+                li {
+                    a.img {
+                        .linkWrap {
+                            background-color: rgba(188, 0, 45, 0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_02 {
+    background-color: #fff;
+    .layoutWrap {
+        .title {
+            color: #333333;
+        }
+        .subTitle {
+            color: #666767;
+        }
+        ul.articleWrap {
+            li {
+                border-top: 1px solid #005887;
+                .article {
+                    background-color: #005887;
+                    a.img {
+                        .linkWrap {
+                            background-color: rgba(122, 161, 194, 0.8);
+                        }
+                        &:after {
+                            border-color: #005887 transparent transparent transparent;
+                        }
+                    }
+                    a.txt {
+                        h3 {
+                            color: #fff;
+                            @include screen(pcLarge) {
+                                @include linear-gradient(to right, transparent 50%, $black 50%);
+                            }
+                        }
+                    }
+                }
+                &.big {
+                    .article {
+                        a.img {
+                            .linkWrap {
+                                background-color: rgba(122, 161, 194, 0.8);
+                            }
+                        }
+                    }
+                    &:after {
+                        border-color: transparent transparent #005887 transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_03 {
+    .layoutWrap {
+        //背景色
+        //background-color: rgba(255, 255, 255, 1);
+        .subTitleWrap {
+            p.subTitle {
+                //描述顏色
+                //color: rgba(102, 102, 102, 1);
+            }
+        }
+        .articleWrap {
+            ul.article {
+                li {
+                    .txtWrap {
+                        a.txt {
+                            h3 {
+                                @include screen(pcLarge) {
+                                    //文字滑過背景色
+                                    @include linear-gradient(to right, transparent 50%, $black 50%);
+                                }
+                            }
+                        }
+                        a.more {
+                            span {
+                                @include screen(pcLarge) {
+                                    //文字滑過背景色
+                                    @include linear-gradient(to right, transparent 50%, $black 50%);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(odd) {
+                        a.img {
+                            .linkWrap {
+                                //圖片滑過顏色
+                                background-color: rgba(188, 0, 45, 0.9);
+                            }
+                        }
+                    }
+                    &:nth-child(even) {
+                        //文章區塊背景色
+                        background-color: rgba(244, 244, 244, 1);
+                        &:after {
+                            //文章區塊背景色－三角形
+                            border-color: transparent transparent transparent rgba(244, 244, 244, 1);
+                        }
+                        a.img {
+                            .linkWrap {
+                                //圖片滑過顏色
+                                background-color: rgba(188, 0, 45, 0.9);
+                            }
+                        }
+                        .txtWrap {
+                            a.category {
+                                //類別文字顏色
+                                color: rgba(0, 0, 0, 1);
+                                //類別底線顏色
+                                border-bottom: 1px solid rgba(0, 0, 0, 1);
+                            }
+                            a.txt {
+                                h3 {
+                                    //文章標題顏色
+                                    color: rgba(0, 0, 0, 1);
+                                }
+                            }
+                            a.more {
+                                span {
+                                    //瞭解更多文字顏色
+                                    color: rgba(102, 102, 102, 1);
+                                    &:hover {
+                                        color: rgba(255, 255, 255, 1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .moreBtn {
+                //是否出現更多文章
+                display: block;
+                //更多文章文字顏色
+                color: #000;
+                span {
+                    @include screen(pcLarge) {
+                        //更多文章滑過背景色
+                        @include linear-gradient(to right, transparent 50%, $black 50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_04 {
+    .layoutWrap {
+        .sliderWrap {
+            .slidesWrap {
+                ul.slides {
+                    li {
+                        a.img {
+                            .linkWrap {
+                                background-color: rgba(235, 90, 36, 0.9);
+                            }
+                        }
+                        .txtWrap {
+                            a.txt {
+                                h3 {
+                                    @include screen(pcLarge) {
+                                        @include linear-gradient(to right, transparent 50%, $black 50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_05 {
+    .layoutWrap {
+        ul.article {
+            li {
+                a.img {
+                    .linkWrap {
+                        background-color: rgba(235, 90, 36, 0.9);
+                    }
+                }
+                .txtWrap {
+                    a.txt {
+                        h3 {
+                            @include screen(pcLarge) {
+                                @include linear-gradient(to right, transparent 50%, $black 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_06 {
+    .layoutWrap {
+        ul.article {
+            li {
+                a.img {
+                    .linkWrap {
+                        background-color: rgba(235, 90, 36, 0.9);
+                    }
+                }
+                .txtWrap {
+                    a.txt {
+                        h3 {
+                            @include screen(pcLarge) {
+                                @include linear-gradient(to right, transparent 50%, $black 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.article_01 {
+    background-color: darken($grey, 50%);
+    .articleWrap {
+        .txtWrap {
+            @include screen(pcSmall) {
+                //border: 1px solid rgba(250,141,41,1);
+            }
+            .btnWrap {
+                a.btn {
+                    background-color: $pink;
+                    &:before {
+                        //border: 1px solid rgba(123,156,188,1);
+                    }
+                    .icon {
+                        svg {
+                            .st0 {
+                                //fill: rgba(123,156,188,1);
+                            }
+                        }
+                    }
+                    .icontext {
+                        //color: rgba(123,156,188,1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.article_02 {
+    .articleWrap {
+        ul.article {
+            li {
+                &:nth-child(odd) {
+                    background-color: lighten($grey, 10%);
+                    a.btn {
+                        background-color: $pink;
+                    }
+                }
+                &:nth-child(even) {
+                    background-color: lighten($grey, 10%);
+                    a.btn {
+                        background-color: $pink;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer_01 {
+    //背景色
+    //background-color: rgba(188,202,210,1);
+}
+
+ul.fixedBtn_01,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
+    li .material_btn {
+        //按鈕色
+        //background-color: rgba(98,195,204,1);
+    }
+}
