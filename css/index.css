@@ -4007,6 +4007,16 @@ body {
   }
 }
 
+.header_02 .headerWrap .visualBg {
+  background-image: url("../img/visual_m.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .header_02 .headerWrap .visualBg {
+    background-image: url("../img/visual_tb.jpg");
+  }
+}
+
 .header_02 .headerWrap .parallax .videoWrapper .videoCover {
   display: none;
 }

@@ -37,10 +37,10 @@ body{
 .header_02 {
     .headerWrap {
         .visualBg {
-            //background-image: url('../img/visual_m.jpg');
+            background-image: url('../img/visual_m.jpg');
             //background-position: center;
             @include screen(tb) {
-                //background-image: url('../img/visual_tb.jpg');
+                background-image: url('../img/visual_tb.jpg');
                 //background-position: center;
             }
         }
