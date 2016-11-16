@@ -83,11 +83,25 @@ body{
 .layout_03 {
     .layoutWrap {
         //背景色
-        //background-color: rgba(255, 255, 255, 1);
+        background-color: $black;
+        .title {
+            color:transparent;
+            @include linear-gradient(to bottom, rgba(255,241,191,1) 60%, rgba(255,204,0,1) 66%, rgba(216,148,0,1) 68%, rgba(168,92,0,1) 75%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            &:after {
+                border-bottom: 0px solid rgba(241,176,70,1);
+                margin-top: 5px;
+                height: 5px;
+                background-color: rgba(241,176,70,1);//IE
+                @include linear-gradient(to right, rgba(255,241,191,1) 0%, rgba(216,148,0,1) 60%, rgba(168,92,0,1) 100%);
+
+            }
+        }
         .subTitleWrap {
             p.subTitle {
                 //描述顏色
-                //color: rgba(102, 102, 102, 1);
+                color: $white;
             }
         }
         .articleWrap {
@@ -115,40 +129,40 @@ body{
                         a.img {
                             .linkWrap {
                                 //圖片滑過顏色
-                                background-color: rgba(188, 0, 45, 0.9);
+                                background-color: rgba(10, 20, 60, 0.5);
                             }
                         }
                     }
                     &:nth-child(even) {
                         //文章區塊背景色
-                        background-color: rgba(244, 244, 244, 1);
+                        background-color: rgba(96, 149, 255, 1);
                         &:after {
                             //文章區塊背景色－三角形
-                            border-color: transparent transparent transparent rgba(244, 244, 244, 1);
+                            border-color: transparent transparent transparent rgba(96, 149, 255, 1);
                         }
                         a.img {
                             .linkWrap {
                                 //圖片滑過顏色
-                                background-color: rgba(188, 0, 45, 0.9);
+                                background-color: rgba(10, 20, 60, 0.5);
                             }
                         }
                         .txtWrap {
                             a.category {
                                 //類別文字顏色
-                                color: rgba(0, 0, 0, 1);
+                                color: $white;
                                 //類別底線顏色
-                                border-bottom: 1px solid rgba(0, 0, 0, 1);
+                                border-bottom: 1px solid $white;
                             }
                             a.txt {
                                 h3 {
                                     //文章標題顏色
-                                    color: rgba(0, 0, 0, 1);
+                                    color: $white;
                                 }
                             }
                             a.more {
                                 span {
                                     //瞭解更多文字顏色
-                                    color: rgba(102, 102, 102, 1);
+                                    color: $black;
                                     &:hover {
                                         color: rgba(255, 255, 255, 1);
                                     }
@@ -162,16 +176,21 @@ body{
                 //是否出現更多文章
                 display: block;
                 //更多文章文字顏色
-                color: #000;
+                color: $white;
                 span {
                     @include screen(pcLarge) {
                         //更多文章滑過背景色
-                        @include linear-gradient(to right, transparent 50%, $black 50%);
+                        @include linear-gradient(to right, transparent 50%, rgba(96,149,255,1) 50%);
                     }
                 }
             }
         }
     }
+}
+//fixed for IE/edge>=10
+_:-ms-input-placeholder, :root .layout_03 .layoutWrap .title {
+    color: rgba(241,176,70,1);
+    background-image: none;
 }
 
 .layout_04 {
@@ -179,11 +198,11 @@ body{
     .layoutWrap {
         .title {
             color:transparent;
-            @include linear-gradient(to bottom, rgba(255,241,191,1) 55%, rgba(255,204,0,1) 66%, rgba(216,148,0,1) 68%, rgba(168,92,0,1) 70%);
+            @include linear-gradient(to bottom, rgba(255,241,191,1) 60%, rgba(255,204,0,1) 66%, rgba(216,148,0,1) 68%, rgba(168,92,0,1) 75%);
             -webkit-background-clip: text;
             background-clip: text;
             &:after {
-                //border-bottom: 5px solid rgba(241,176,70,1);
+                border-bottom: 0px solid rgba(241,176,70,1);
                 margin-top: 5px;
                 height: 5px;
                 background-color: rgba(241,176,70,1);//IE
@@ -226,19 +245,38 @@ _:-ms-input-placeholder, :root .layout_04 .layoutWrap .title {
 }
 
 .layout_06 {
+    background-color: $black;
     .layoutWrap {
+        .title {
+            color:transparent;
+            @include linear-gradient(to bottom, rgba(255,241,191,1) 60%, rgba(255,204,0,1) 66%, rgba(216,148,0,1) 68%, rgba(168,92,0,1) 75%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            &:after {
+                border-bottom: 0px solid rgba(241,176,70,1);
+                margin-top: 5px;
+                height: 5px;
+                background-color: rgba(241,176,70,1);//IE
+                @include linear-gradient(to right, rgba(255,241,191,1) 0%, rgba(216,148,0,1) 60%, rgba(168,92,0,1) 100%);
+            }
+        }
+        .subTitleWrap {
+            p.subTitle {
+                color: $white;
+            }
+        }
         ul.article {
             li {
                 a.img {
                     .linkWrap {
-                        background-color: rgba(235, 90, 36, 0.9);
+                        background-color: rgba(10, 20, 60, 0.5);
                     }
                 }
                 .txtWrap {
                     a.txt {
                         h3 {
                             @include screen(pcLarge) {
-                                @include linear-gradient(to right, transparent 50%, $black 50%);
+                                @include linear-gradient(to right, transparent 50%, rgba(96,149,255,1) 50%);
                             }
                         }
                     }
@@ -247,17 +285,25 @@ _:-ms-input-placeholder, :root .layout_04 .layoutWrap .title {
         }
     }
 }
+//fixed for IE/edge>=10
+_:-ms-input-placeholder, :root .layout_06 .layoutWrap .title {
+    color: rgba(241,176,70,1);
+    background-image: none;
+}
 
 .article_01 {
-    background-color: darken($grey, 50%);
+    background-color: rgba(96,149,255,0.2);
+    @include screen(pcSmall) {
+        background-color: rgba(0,0,0,0.5);
+    }
     .articleWrap {
         .txtWrap {
             @include screen(pcSmall) {
-                //border: 1px solid rgba(250,141,41,1);
+                border: 1px solid rgba(216,147,0,1);
             }
             .btnWrap {
                 a.btn {
-                    background-color: $pink;
+                    @include linear-gradient(to bottom, rgba(255,241,191,1) 0%, rgba(255,204,0,1) 33%, rgba(216,148,0,1) 77%, rgba(168,92,0,1) 100%);
                     &:before {
                         //border: 1px solid rgba(123,156,188,1);
                     }
@@ -277,15 +323,63 @@ _:-ms-input-placeholder, :root .layout_04 .layoutWrap .title {
     }
 }
 
+.gallery_01 {
+    background-color: $black;
+    .layoutWrap {
+        .title {
+            color:transparent;
+            @include linear-gradient(to bottom, rgba(255,241,191,1) 60%, rgba(255,204,0,1) 66%, rgba(216,148,0,1) 68%, rgba(168,92,0,1) 75%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            &:after {
+                border-bottom: 0px solid rgba(241,176,70,1);
+                margin-top: 5px;
+                height: 5px;
+                background-color: rgba(241,176,70,1);//IE
+                @include linear-gradient(to right, rgba(255,241,191,1) 0%, rgba(216,148,0,1) 60%, rgba(168,92,0,1) 100%);
+            }
+        }
+        .detail {
+            color: $white;
+        }
+    }
+    .gallery_01_slider {
+        .slides {
+            .txt {
+                display: none;
+            }
+        } 
+        .showMore {
+            background-color: $black;
+            color: $white;
+            bottom: 60px;//if .txt none
+            @include screen(pcSmall) {
+                bottom: 20px;//if .txt none
+            }
+        }
+        .jssort01 {
+            bottom: 60px;//if .txt none
+            @include screen(pcSmall) {
+                bottom: 0px;//if .txt none
+            }
+        }
+    }
+}
+//fixed for IE/edge>=10
+_:-ms-input-placeholder, :root .gallery_01 .layoutWrap .title {
+    color: rgba(241,176,70,1);
+    background-image: none;
+}
+
 .footer_01 {
     //背景色
-    //background-color: rgba(188,202,210,1);
+    background-color: rgba(10,20,60,1);
 }
 
 ul.fixedBtn_01,
 .fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
     li .material_btn {
         //按鈕色
-        //background-color: rgba(98,195,204,1);
+        background-color: rgba(96,149,255,1);
     }
 }

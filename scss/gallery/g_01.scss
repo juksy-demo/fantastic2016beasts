@@ -1,9 +1,10 @@
 .gallery_01 {
     position: relative;
     background-color: $white;
+    padding-top: 30px;
     padding-bottom: 20px;
     @include screen(pcSmall) {
-        padding-bottom: 50px;
+        padding-bottom: 150px;
     }
     .layoutWrap {
         @include screen(pcSmall) {
@@ -12,10 +13,17 @@
             padding-bottom: 30px;
         }
         .title {
-            padding-top: 50px;
+            padding: 50px $m_gap 0 $m_gap;
             text-align: center;
             font-size: 30px;
-            line-height: 2em;
+            line-height: 1.5em;
+            &:after {
+                content: '';
+                display: block;
+                width: 100px;
+                margin: 10px auto;
+                border-bottom: 5px solid $black;
+            }
         }
         .detail {
             margin: 0 auto;
@@ -26,8 +34,8 @@
             }
             @include screen(pcSmall) {
                 text-align: center;
-                padding: 0px;
-                width: 65%;
+                padding: 10px 0px;
+                width: 630px;
             }
         }
     }
